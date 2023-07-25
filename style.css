@@ -1,0 +1,756 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /********** scrolling *****/
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    position: relative;
+  }
+  
+  /********** End scrolling *****/
+  
+  /******* Header *******/
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://corporate.bentley/content/dam/bentley/Corporate/hero/About/Bentley-Beyond100-1920x670.jpg/_jcr_content/renditions/original./Bentley-Beyond100-1920x670.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+  }
+  
+  /*******  End header   *******/
+  
+  /***** SEARCH BOX *******/
+  .topnav {
+    overflow: hidden;
+    background-color: #000000;
+  
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 5px;
+    margin: 5px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .topnav .search-container {
+      float: none;
+    }
+  }
+  
+  /***** End SEARCH BOX *******/
+  
+  /***** NAV LINKS *******/
+  nav {
+    display: flex;
+    padding: 0.1% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  
+  }
+  
+  .nav-links ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+  
+  }
+  
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .nav-links li {
+      font-size: 20px;
+    }
+  }
+  
+  
+  /***** END NAV LINKS *******/
+  
+  
+  /**** header******/
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+  }
+  
+  .text-box h1 {
+    font-size: 60px;
+  
+  }
+  
+  .text-box p {
+    margin: 15px 0 30px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .hero {
+    display: inline block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 33px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hero:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+  }
+  
+  @media (max-width: 600px) {
+    .text-box h1 {
+      font-size: 50px;
+    }
+  }
+  
+  /*---------- END Header ---------*/
+  
+  /*---------- cartype ---------*/
+  
+  .cartype {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  h1 {
+    font-size: 55px;
+    font-weight: 600;
+  
+  }
+  
+  p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  
+  }
+  
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .car-1 {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  
+  }
+  
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  
+  }
+  
+  .car-1:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  table,
+  th,
+  td {
+    border: 10px solid black;
+    font-size: 120%;
+  }
+  
+  @media(max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .cartype h1 {
+      font-size: 35px;
+    }
+  }
+  
+  /*---------- BRANDS ---------*/
+  
+  .BRANDS {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  
+  }
+  
+  .car-2 {
+    flex-basis: 34%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  .car-2 img {
+    width: 100%;
+    display: block;
+  
+  }
+  
+  .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+  
+  }
+  
+  .layer:hover {
+    background: rgba(128, 128, 128, 0.7);
+  
+  
+  }
+  
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #FFD700;
+    font-size: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  
+  .layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+  
+  }
+  
+  @media(max-width: 600px) {
+    .brands {
+      flex-direction: column;
+    }
+  
+    .BRANDS h1 {
+      font-size: 35px;
+    }
+  }
+  
+  /*---------- OFFERS loop ---------*/
+  
+  #rssBlock {
+    left: 0px;
+    height: 60px;
+    background: #ff0000;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cnnContents {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Museo';
+    font-weight: 300;
+  }
+  
+  .marqueeStyle {
+    color: #fff;
+  }
+  
+  .marqueeStyle {
+    display: inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+  }
+  
+  
+  
+  
+  /* scrolling-left is continuous/repeatly text */
+  
+  @keyframes scrolling-left1 {
+    0% {
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  
+  
+  @-webkit-keyframes scrolling-left1 {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .Offers {
+      font-size: 20px;
+      padding: 12%;
+    }
+  }
+  
+  /*---------- OFFERS cars ---------*/
+  
+  
+  
+  .row1 {
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Offers {
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    padding-top: 0px;
+  }
+  
+  .cr p {
+    padding-top: 33px;
+  }
+  
+  .car-3 {
+    flex-basis: 25%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    transition: all .5s;
+  }
+  
+  
+  .car-3:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .23), 0 10px 10px rgba(0, 0, 0, .2);
+  }
+  
+  .car-3 img {
+    width: 100%;
+    border-radius: 100px;
+    display: block;
+  
+  }
+  
+  .ps {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1;
+    margin: 0;
+  
+  }
+  
+  .ppo {
+    color: #aaaaaa;
+    text-decoration: line-through;
+    font-size: 1.3rem;
+  }
+  
+  .ppn {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    background-color: red;
+    margin: auto;
+    text-align: right;
+    cursor: default;
+  
+  
+  }
+  
+  .button {
+  
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @media(max-width: 600px) {
+    .row1 {
+      flex-direction: column;
+    }
+  }
+  
+  /*---------- GALLERY---------*/
+  
+  
+  .ga-1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+  
+  }
+  
+  .ga {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  
+  .ga img {
+  
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .ga p {
+    padding: 0;
+  
+  }
+  
+  .ga h3 {
+  
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  
+  }
+  
+  .ga {
+    padding: 50px;
+    background-color: hide;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+  
+  .ga:hover {
+    transform: scale(1.5);
+  }
+  
+  @media(max-width: 600px) {
+    .ga-1 {
+      flex-direction: flex;
+    }
+  
+    .ga-1 h1 {
+      font-size: 35px;
+    }
+  }
+  
+  /*---------- REVIEW ---------*/
+  
+  .row2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cr {
+    width: 80%;
+    margin: auto;
+    padding-top: 15%;
+    text-align: center;
+  }
+  
+  .cr1 {
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  
+  
+  }
+
+
+  .cr1 img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  
+  }
+  
+  .cr1 p {
+    padding: 0;
+  }
+  
+  .cr1 h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  .star-icon {
+    color: #ddd;
+    font-size: 2em;
+    position: relative;
+  }
+  
+  .star-icon.full:before {
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    color: #FDE16D;
+    content: '\2605';
+    position: absolute;
+    left: 0;
+  }
+  
+  @media(max-width: 600px) {
+    .row2 {
+      flex-direction: column;
+    }
+  
+    .cr h1 {
+      font-size: 35px;
+    }
+  }
+  
+  /*---------- CONTACT US -----------*/
+  
+  .callus {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1551590192-8070a16d9f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 150px 0;
+  
+  }
+  
+  .callus h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .callus h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /*---------- FOOTER ---------*/
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+  
+  }
+  
+  .footer h4 {
+    font-size: 33px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer h4 {
+      font-size: 20px;
+    }
+  }
+  
+  /*---------- END FOOTER ---------*/
+  
+  /*************START SOCIAL************/
+  
+  .svg-inline--fa {
+    vertical-align: -0.200em;
+  }
+  
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .rounded-social-buttons .social-button:hover,
+  .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-twitter,
+  .fa-facebook-f,
+  .fa-linkedin,
+  .fa-youtube,
+  .fa-instagram {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.facebook:hover,
+  .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.twitter {
+    background: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.twitter:hover,
+  .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin {
+    background: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin:hover,
+  .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.youtube:hover,
+  .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.instagram {
+    background: #125688;
+  }
+  
+  .rounded-social-buttons .social-button.instagram:hover,
+  .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+  }
+  
+  
+  /************* END SOCIAL ************/
+  
